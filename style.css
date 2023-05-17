@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.graph-container {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.graph-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.graph-description {
+  font-size: 14px;
+  color: #666;
+}
+
+.graph {
+  max-width: 100%;
+}
+
+/* Customize Chart.js tooltip */
+.chartjs-tooltip {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 8px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+  transition: opacity 0.3s ease;
+}
+
+.chartjs-tooltip-key {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+}
+
+.chartjs-tooltip-value {
+  display: inline-block;
+}
+
+/* Customize Chart.js legend */
+.chartjs-legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.chartjs-legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.chartjs-legend-color {
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+}
+
+.chartjs-legend-text {
+  font-size: 12px;
+}

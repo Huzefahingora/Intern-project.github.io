@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Visualization</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Data Visualization</h1>
+  <div class="graph-container">
+    <h2 class="graph-title">Average RPM</h2>
+    <canvas id="rpmChart" class="graph"></canvas>
+    <p class="graph-description">This graph represents the average RPM over time.</p>
+  </div>
+  <div class="graph-container">
+    <h2 class="graph-title">Total Rotations</h2>
+    <canvas id="rotationsChart" class="graph"></canvas>
+    <p class="graph-description">This graph shows the total number of rotations over time.</p>
+  </div>
+  <div class="graph-container">
+    <h2 class="graph-title">On-Time vs Off-Time</h2>
+    <canvas id="timeChart" class="graph"></canvas>
+    <p class="graph-description">This graph compares the on-time and off-time durations over time.</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Sample data
+    const data = [
+      { Device_id: 1, time: "11-05-2023 00:01", RPM: 10, Total_rotations: 10, On_time: 1, Off_time: 0 },
+      { Device_id: 1, time: "11-05-2023 00:02", RPM: 15, Total_rotations: 25, On_time: 2, Off_time: 0 },
+      { Device_id: 1, time: "11-05-2023 00:03", RPM: 15, Total_rotations: 40, On_time: 3, Off_time: 0 },
+      { Device_id: 1, time: "11-05-2023 00:04", RPM: 15, Total_rotations: 55, On_time: 4, Off_time: 0 },
+      { Device_id: 1, time: "11-05-2023 00:05", RPM: 15, Total_rotations: 70, On_time: 5, Off_time: 0 },
+      { Device_id: 1, time: "11-05-2023 00:06", RPM: 14, Total_rotations: 84, On_time: 6, Off_time: 0 },
+      { Device_id: 1, time: "11-05-2023 00:07", RPM: 16, Total_rotations: 100, On_time: 7, Off_time: 0 },
+      { Device_id: 1, time: "11-05-2023 00:08", RPM: 15, Total_rotations: 115, On_time: 8, Off_time: 0 },
+      { Device_id: 1, time: "11-05-2023 00:09", RPM: 15, Total_rotations: 130, On_time: 9, Off_time: 0 },
+      { Device_id: 1, time: "11-05-2023 00:10", RPM: 15, Total_rotations: 145, On_time: 10, Off_time: 0 },
+      { Device_id: 1, time: "11-05-2023 00:11", RPM: 15, Total_rotations: 160, On_time: 11, Off_time: 0 },
+      { Device_id: 1, time: "11-05-2023 00:12", RPM: 15, Total_rotations: 175, On_time: 12, Off_time: 0 },
+      { Device_id: 1, time: "11-05-2023 00:13", RPM: 15, Total_rotations: 190, On_time: 13, Off_time: 0 },
+      { Device_id: 1, time: "11-05-2023 00:14", RPM: 15, Total_rotations: 205, On_time: 14, Off_time: 0 }
+    ];
+
+    generateGraphs(data);
+  </script>
+</body>
+</html>
